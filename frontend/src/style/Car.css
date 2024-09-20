@@ -1,0 +1,109 @@
+/* Existing Styles */
+.cars-container {
+  padding: 20px;
+}
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Spacing between items */
+}
+
+.car-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.car-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.room-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.room-link:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal-content {
+  max-width: 600px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Background color of the footer */
+  color: white; /* Text color */
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Padding inside the footer */
+  position: relative; /* Relative positioning */
+  bottom: 0; /* Align footer to the bottom */
+  width: 100%; /* Full width */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+}
+
+/* Ensure the footer is pushed to the bottom when content is not enough to fill the viewport */
+body {
+  min-height: 100vh; /* Make sure body takes at least full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* Push the footer to the bottom */
+}
+
+/* Responsive footer styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 10px; /* Adjust padding for smaller screens if needed */
+  }
+}
+
+@media (max-width: 768px) {
+  .car-list {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+
+  .car-image {
+    height: 150px;
+  }
+}

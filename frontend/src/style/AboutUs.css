@@ -1,0 +1,78 @@
+
+ .about-us-text {
+    max-width: 600px;
+  }
+  
+  .read-more-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .read-more-button:hover {
+    background-color: #0056b3;
+  }
+    /* style/AboutUs.css */
+
+.about-us-container {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5) url('/images/car-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .about-us-header {
+    border: 2px solid black;
+    background-color: rgb(90, 84, 77);
+    font-style:oblique;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: #f8f8f8;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: #f8f8f8;
+  }
+  
+  .about-us-image img {
+    position: relative;
+    height: auto;
+    margin-right: 20px;
+    opacity: 0.2;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .about-us-text {
+    font-size: larger;
+    position:absolute;
+    float: right;
+    width:80%;
+    margin-right: 20px;
+  }
+  .about-us-text h1{
+    font-size: 60px;
+    color: rgb(95, 195, 246);
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.5) url('/images/car-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Ensure that other content does not have unwanted margins or paddings */
+  * {
+    box-sizing: border-box;
+  }    
